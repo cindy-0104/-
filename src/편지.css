@@ -1,0 +1,16 @@
+body{
+    background-color:rgb(233, 194, 131); 
+    width: 200px; 
+    height: 100px;
+    font-style: italic;
+    font-size: larger; 
+    text-align:center;
+     margin-top: 230px; 
+     margin-left: 300px;
+    background-image: url('39da0fc4adb83eeb9bf1c63e77313c25.jpg');
+    background-size: cover;          
+    background-position: center;       
+    height: 10vh;                   
+                     
+
+}

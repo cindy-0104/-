@@ -1,0 +1,18 @@
+body{
+    background-color:rgb(233, 194, 131); 
+    width: 200px; 
+    height: 100px;
+    font-style: italic;
+    color:white;
+    font-size: larger; 
+    text-align:right;
+     margin-top: 120px; 
+     margin-left: 400px;
+    background-image: url('169978665717844445.avif');
+    background-repeat: no-repeat;
+    background-size: 1000px;          
+    background-position: 900;       
+    height: 10vh;                   
+                     
+
+}
