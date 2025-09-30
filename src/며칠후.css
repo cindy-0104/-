@@ -1,9 +1,9 @@
 body{
     color:rgba(22, 42, 0, 0.598);
     font-size:20px;
-margin-top: 200px;
-margin-left:240px;
+margin-top: 60px;
+margin-left:50px;
  background-image: url('images.jpeg');  
  background-repeat: no-repeat; 
-background-size:900px;
+background-size:400px;
 } 
