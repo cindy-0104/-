@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    height: 93vh;
+    width: 94vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* 세로 중앙 */
+    align-items: center;      /* 가로 중앙 */
+
+    font-family: 'Jua', sans-serif;
+    font-style: italic;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+
+    background-color: rgb(233, 194, 131);
+    background-image: url('169978665717844445.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    transform: translateY(12%);  /* 중앙 기준에서 20% 아래로 */
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.rolling-container {
+    position: absolute;
+    bottom: 50px;        /* 화면 아래쪽에 위치 */
+    width: 100%;
+    overflow: hidden;    /* 화면 밖은 숨김 */
+}
+
+
+.text{
+    animation:shake 2s ease-in-out infinite; /* 8초마다 반복 */
+}
+
+/* 좌→우로 무한 반복 이동 */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-20px) rotate(-5deg); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(20px) rotate(5deg); }
+    100% { transform: translateX(0); }
+}

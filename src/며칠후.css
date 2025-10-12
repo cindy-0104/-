@@ -1,9 +1,19 @@
 body{
     color:rgba(22, 42, 0, 0.598);
     font-size:20px;
-margin-top: 60px;
-margin-left:50px;
+    text-align: center;
+margin-top: 200px;
+margin-left:1px; 
+
+background-color: aliceblue;
+  height: 94vw;
  background-image: url('images.jpeg');  
  background-repeat: no-repeat; 
-background-size:400px;
+background-size:360px;
+background-position: center;
+margin-bottom: 260px;
 } 
+a {
+  color: rgba(22, 42, 0, 0.598);
+  text-decoration: none;
+}

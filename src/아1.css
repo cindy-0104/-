@@ -1,19 +1,38 @@
-body{
-    font-size: 100px;
-  background-color:rgb(233, 194, 131); 
-    width: 200px; 
-    height: 100px;
+body {
+    margin: 0;                        /* 기본 여백 제거 */
+    height: 93vh;                    /* 화면 높이 100% */
+    width: 94vw;                     /* 화면 너비 100% */
+
+    display: flex;                    /* 중앙 정렬 위해 flex 사용 */
+    flex-direction: column;           /* 세로 배치 */
+    justify-content: center;          /* 세로 중앙 정렬 */
+    align-items: center;              /* 가로 중앙 정렬 */
+
     font-style: italic;
-    color:white;
-    text-align:right;
-     margin-top: 200px; 
-     margin-left: 400px;
+    color: white;
+    font-size: 9rem;                 /* 폰 화면용 상대 크기 */
+    text-align: center;
+
+    background-color: rgb(233, 194, 131); 
     background-image: url('169978665717844445.avif');
     background-repeat: no-repeat;
-    background-size: 1000px;          
-    background-position: 900;       
-    height: 10vh;                   
-                     
-
+    background-size: cover;            /* 화면 꽉 채우기 */
+    background-position: center;       /* 가운데 정렬 */
 }
-                  
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.text{
+    animation:shake 1.5s ease-in-out infinite; /* 8초마다 반복 */
+}
+
+/* 좌→우로 무한 반복 이동 */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-20px) rotate(-5deg); }
+    50% { transform: translateX(0); }
+    75% { transform: translateX(20px) rotate(5deg); }
+    100% { transform: translateX(0); }
+}

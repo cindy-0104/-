@@ -4,18 +4,43 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="./src/악.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./src/악.css">
     <title>행운의편지</title>
 </head>
 
 <body>
-     <p> ? </p>
-    <p>  </p>    <p>  </p>
-     <p> <a href="코.html">.</p>
- 
-    
-    <script type="module" src="/src/main.js"></script> 
-</body>
+    <!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" href="./src/악.css">
+  <title>행운의편지</title>
+</head>
+
+<body>
+  <p> ? </p>
+  <p>  </p>
+  <p>  </p>
+  <p><a href="고양이.html">.</a></p>
+<style>
+ body{ font-family:'Jua', sans-serif;}
+</style>
+
+  <audio id="myAudio" src="src/cute-cat-meow-400946.mp3" preload="auto" autoplay></audio>
+
+  <script>
+  
+    const audio = document.getElementById('myAudio');
+    window.addEventListener('load', () => {
+      audio.play().catch(() => {
+        console.log(".");
+      });
+    });
+  </script>
+
+</body>
 
 </html>

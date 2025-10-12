@@ -1,0 +1,51 @@
+body {
+    margin: 0;                        /* 기본 여백 제거 */
+    height: 91vh;                    /* 화면 높이 100% */
+    width: 94vw;                     /* 화면 너비 100% */
+
+    display: flex;                    /* 중앙 정렬 위해 flex 사용 */
+    flex-direction: column;           /* 세로 배치 */
+    justify-content: center;          /* 세로 중앙 정렬 */
+    align-items: center;              /* 가로 중앙 정렬 */
+
+    border:10px solid;          /* 두께 */         /* 실선 */
+    border-color: #ffffff; 
+    border-radius:30px;
+    color: white;
+    
+    font-size: 5rem;                 /* 폰 화면용 상대 크기 */
+    text-align: center;
+    line-height:18px;
+
+    background-color: rgb(233, 194, 131); 
+    background-image: url('169978665717844445.avif');
+    background-repeat: no-repeat;
+    background-size: cover;            /* 화면 꽉 채우기 */
+    background-position: center;       /* 가운데 정렬 */
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.rolling-container {
+    position: absolute;
+    bottom: 50px;        /* 화면 아래쪽에 위치 */
+    width: 100%;
+    overflow: hidden;    /* 화면 밖은 숨김 */
+}
+
+/* 굴러가는 이미지 */
+.rolling-image {
+    width: 150px; /* 이미지 크기 조절 */
+    animation: roll 6s linear infinite; /* 8초마다 반복 */
+}
+
+/* 좌→우로 무한 반복 이동 */
+@keyframes roll {
+    0% {
+        transform: translateX(-250px) rotate(0deg);
+    }
+    100% {
+        transform: translateX(110vw) rotate(360deg);
+    }
+}

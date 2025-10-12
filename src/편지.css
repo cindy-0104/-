@@ -1,16 +1,29 @@
-body{
-    background-color:rgb(233, 194, 131); 
-    width: 200px; 
-    height: 100px;
-    font-style: italic;
-    font-size: larger; 
-    text-align:center;
-     margin-top: 230px; 
-     margin-left: 100px;
-    background-image: url('39da0fc4adb83eeb9bf1c63e77313c25.jpg');
-    background-size: 500px;          
-    background-position: center;       
-    height: 10vh;                   
-                     
+body {
+    margin: 20px;                        
+    height: 93vh;                     /* 화면 전체 높이 */
+    width: 90vw;                      /* 화면 전체 너비 */
 
+    display:flexbox;                    
+    flex-direction:row;           
+    justify-content: center;          
+    align-items: center;              
+
+    color: rgb(81, 32, 3);
+    font-family: 'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size: 1.2rem;                /* 모바일용 적절한 크기 */
+    line-height: 1.5;                 /* 줄 간격 조정 */
+    text-align: center;
+    padding-top:200px;                     /* 화면 안쪽 여백 확보 */
+
+    background-color: rgb(233, 194, 131); 
+    background-image: url('39da0fc4adb83eeb9bf1c63e77313c25.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;            
+    background-position: center;       
+    background-attachment: fixed;      /* 스크롤해도 배경 고정 */
+    
 }
+a {
+  color: #9a621f;
+  text-decoration: none;}
